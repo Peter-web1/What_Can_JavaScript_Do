@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+    <script>
+        function myFunction() {
+          document.getElementById("demo3").innerHTML = "Paragraph changed.";
+        }
+
+        function myFunction1() {
+          document.getElementById("demo3").innerHTML = "Paragraph";
+        }
+        </script>
+</head>
+<body>
+    <h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn off the light</button>
+
+<button onclick="body.style.background='gray'">background gray</button>
+<button onclick="body.style.background='inherit'">white</button>
+
+
+
+<br><br>
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can change the style of an HTML element.</p>
+
+<button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Click Me!</button>
+<button type="button" onclick="document.getElementById('demo').style.fontSize='16px'">Click Me back!</button>
+
+<br><br>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo1">JavaScript can hide HTML elements.</p>
+
+<button type="button" onclick="document.getElementById('demo1').style.display='none'">Click Me!</button>
+<button type="button" onclick="document.getElementById('demo1').style.display='inherit'">Click Me again!</button>
+<br><br>
+
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can show hidden HTML elements.</p>
+
+<p id="demo2" style="display:none">Hello JavaScript!</p>
+
+<button type="button" onclick="document.getElementById('demo2').style.display='block'">Click Me!</button>
+
+<br><br>
+<h2>JavaScript in Head</h2>
+
+<p id="demo3">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+<button type="button" onclick="myFunction1()">Come back</button>
+
+<br><br>
+
+<h2>JavaScript in Body</h2>
+
+<p id="demo4">A Paragraph.</p>
+
+<button type="button" onclick="myFunction2()">Try it</button>
+
+<script>
+function myFunction2() {
+  document.getElementById("demo4").innerHTML = "Paragraph changed.";
+}
+</script>
+
+</body>
+</html>
